@@ -1,6 +1,5 @@
 {
     async function updateTable(root){
-        root.querySelector(".table-refresh__button").classList.add("table-refresh__button--refreshing");
 
         const table = root.querySelector(".table-refresh__table")
         const response = await fetch(root.dataset.url);
@@ -22,17 +21,14 @@
                 </tr>
             `);
         }
-
-        root.querySelector(".table-refresh__labels").textContent = `Last updated: ${new Date(data.lastUpdated).toLocaleString()}`;
-        root.querySelector(".table-refresh__button").classList.remove("table-refresh__button--refreshing");
     }
 
     for(const root of document.querySelectorAll(".table-refresh[data-url]")){
         const table = document.createElement("table");
-        const options = document.createElement("div");
+       
 
         table.classList.add("table-refresh__table");
-        options.classList.add("table-refresh__options");
+        
 
         table.innerHTML = `
             <thead>
@@ -48,19 +44,23 @@
             </tbody>
         `;
 
-        options.innerHTML = `
-            <span class="table-refresh__labels">Last update: never</span>
-            <button type="button" class="table-refresh__button">
-                <i class="material-icons">refresh</i>
-            </button>
-        `;
+       
 
-        root.append(table,options);
+        root.append(table);
 
-        options.querySelector(".table-refresh__button").addEventListener("click", () => {
-            updateTable(root)
-        })
-
+        
         updateTable(root);
     }
+
+    const today = new Date();
+    const yyyy = today.getFullYear();
+    let mm = today.getMonth() + 1;
+    let dd = today.getDate();
+
+    if (dd < 10) dd = '0' + dd;
+    if (mm < 10) mm = '0' + mm;
+
+    const formattedToday = dd + '/' + mm + '/' + yyyy;
+    console.log(formattedToday)
+    document.querySelector(".div-today").innerHTML = `<p>Tính đến ngày ${formattedToday.toString()}</p>`;
 }

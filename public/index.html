@@ -8,27 +8,29 @@
 	</head>
 	<body>
 		
-		<div id="container">
-			<div class="dTop">
-				<div class="pLogo">
-
+		<div class="background-image">
+			<div class="containerOP1 OP1">
+				<div class="logo-image ">
+					<img src="./img/LOGO_OP1.png" class="center topLogo">
 				</div>
-				<div class="pJoinButton">
-				
+				<div class="div-blank"></div>
+				<div class="title-result">
+					<img src="./img/title_result.png">
+				</div>
+				<div class="div-today"></div>
+				<div class="table-refresh" data-url="/data"></div>
+				<div class="btn-join2 ">
+					<a href="#">
+						<img src="./img/BtnJoin_OP1.png" class="center botBtn">
+					</a>
 				</div>
 			</div>
-
-			<div class="dMid">
-				
-			</div>
-
-			<div class="dBot">
-				
-			</div>
+			<div class="btn-join OP2"><a href="#"></a></div>
+			
 		</div>
 		
 
-        <div class="table-refresh" data-url="/data"></div>
+        
 			
 		
 		<script src="./src/app.js"></script>
@@ -37,19 +39,116 @@
 
 
 <style>
-.dTop{
-	background-color: red;
-	display: flex;
-	padding: 10px;
+*{
+	margin: 0;
+	padding: 0;
 }
 
-.dMid{
-	background-color: blue;
+.btn-join{
+	display: block;
+	width: 100%;
+	height: 250px;
+	text-align: center;
 }
 
-.dBot{
-	background-color: peru;
+.btn-join a{
+	width: 70%;
+	height: 100%;
+	cursor: pointer;
+	padding:1em;
+    text-align: center;
+    display:inline-block;
+    text-decoration: none !important;
+    margin-top: 80px;
 }
+
+.center {
+ 	display: block;
+	margin: auto;
+}
+
+.btn-join2{
+	padding-top: 24px;
+}
+
+.topLogo{
+	padding-top: 20px;
+}
+
+.botBtn{
+	padding-bottom: 20px;
+}
+
+.containerOP1{
+	width: 100%;
+	height: 100%;
+}
+
+.div-blank{
+	height: 29vh;
+	
+}
+
+.title-result img{
+	width: 60%;
+	display: block;
+	margin: auto;
+}
+
+.div-today{
+	background-image: url('./img/BG_date.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 30px;
+}
+
+.div-today p{
+	text-align: center;
+	color: white;
+	padding-top: 6px;
+}
+
+@media screen and (max-width:500px) {
+	.background-image{
+		background-image: url('./img/BG_OP1.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		height: 100vh;
+		
+	}
+
+	.OP2{
+		display: none;
+	}
+
+	.OP1{
+		display: block;
+	}
+}
+
+
+
+@media screen and (min-width:501px) {
+	.background-image{
+		background-image: url('./img/BG_OP2.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		height: 180vh;
+		
+	}
+
+	.OP2{
+		display: block;
+	}
+
+	.OP1{
+		display: none;
+	}
+}
+	
 </style>	
 
 

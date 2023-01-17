@@ -1,20 +1,33 @@
 .table-refresh{
-    min-width: 400px;
+    min-width: 300px;
     max-width: 1000px;
-    font-size: 14px;
+    font-size: 11px;
     font-family: 'FS PF BeauSans Pro', sans-serif;
+    height: 220px;
 }
 
 .table-refresh__table{
+    display: block;
     border-collapse: collapse;
-    width: 100%;
+    width: 80%;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     border-bottom: 2px solid #009578;
+    overflow-y: auto;
+    height: 220px;
+    display: block;
+    margin: auto;
 }
 
 .table-refresh__table thead tr {
     background-color: #009578;
     color: white;
+    
+}
+
+.table-refresh__table thead tr,
+.table-refresh__table thead th {
+    position: sticky;
+    top: 0px;
 }
 
 .table-refresh__table th,
@@ -66,3 +79,12 @@
     font-size: 0.8em;
     color: #999999;
 }
+
+/* html>body div.tableContainer table {
+    width: calc(100% - 16px);
+    overflow: visible;
+}
+
+.html>body tbody.scrollContent {
+    width: calc(100% + 16px);
+} */
