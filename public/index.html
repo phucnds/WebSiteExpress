@@ -15,17 +15,29 @@
 				</div>
 				<div class="div-blank"></div>
 				<div class="title-result">
-					<img src="./img/title_result.png">
+					<img src="./img/title_gift.png">
 				</div>
 				<div class="div-today"></div>
 				<div class="table-refresh" data-url="/data"></div>
 				<div class="btn-join2 ">
-					<a href="#">
+					<a id="btn" href="#">
 						<img src="./img/BtnJoin_OP1.png" class="center botBtn">
 					</a>
 				</div>
 			</div>
-			<div class="btn-join OP2"><a href="#"></a></div>
+
+			
+			<div class="containerOP2 OP2">
+				<div class="btn-join"><a id="btn2" href="#"></a></div>
+				<div class="div-blank2"></div>
+				<div class="title-gift">
+					<img src="./img/title_gift.png">
+				</div>
+				<div class="div-today2"></div>
+				<div class="table-refresh2" data-url="/data"></div>
+			</div>
+
+			
 			
 		</div>
 		
@@ -47,7 +59,7 @@
 .btn-join{
 	display: block;
 	width: 100%;
-	height: 250px;
+	height: 50vh;
 	text-align: center;
 }
 
@@ -85,12 +97,22 @@
 }
 
 .div-blank{
-	height: 32vh;
+	height: 36vh;
 	
 }
 
+.div-blank2{
+	height: 10vh;
+}
+
 .title-result img{
-	width: 60%;
+	width: 40%;
+	display: block;
+	margin: auto;
+}
+
+.title-gift img{
+	height: 90px;
 	display: block;
 	margin: auto;
 }
@@ -108,6 +130,25 @@
 	text-align: center;
 	color: white;
 	padding-top: 6px;
+	font-family: 'PF BeauSans Pro',Sans-serif;
+	font-size: 14px;
+}
+
+.div-today2{
+	background-image: url('./img/BG_date.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 30px;
+	margin-bottom: 16px;
+}
+
+.div-today2 p{
+	text-align: center;
+	color: white;
+	padding-top: 6px;
+	font-family: 'PF BeauSans Pro',Sans-serif;
+	font-size: 14px;
 }
 
 @media screen and (max-width:500px) {
@@ -137,7 +178,7 @@
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
-		height: 180vh;
+		height: 140vh;
 		
 	}
 

@@ -8,7 +8,7 @@ app.use(express.static("public"));
 
 const data = {
     headers: ["Name","Age","Prof","Country"],
-    rows: new Array(10).fill(undefined).map(() => {
+    rows: new Array(30).fill(undefined).map(() => {
         return [
             chance.name(),
             chance.age(),

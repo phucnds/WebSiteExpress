@@ -1,90 +1,134 @@
-.table-refresh{
-    min-width: 300px;
-    max-width: 1000px;
-    font-size: 11px;
-    font-family: 'FS PF BeauSans Pro', sans-serif;
-    height: 220px;
+@font-face {  
+    font-family: FontBbook;  
+    src: url('https://elofun.github.io/VTPRewards/font/FS_PFBeauSansPro-Bbook.otf'); 
 }
 
+@font-face {  
+    font-family: FontBold;  
+    src: url('https://elofun.github.io/VTPRewards/font/FS_PFBeauSansPro-Bold.ttf'); 
+}
+
+@font-face {  
+    font-family: FontSemi;  
+    src: url('https://elofun.github.io/VTPRewards/font/FS_PFBeauSansPro-SemiBold.ttf'); 
+}
+
+.table-refresh{
+    width: 95%;
+    font-size: 11px;
+    font-family: 'FontSemi';
+    color: #4348C1;
+    height: 220px;
+    margin: auto;
+    position: relative;
+}
+
+.table-refresh__table th, .table-refresh__table td {
+    border: 0.5px solid #e12929;
+  }
+
 .table-refresh__table{
-    display: block;
     border-collapse: collapse;
-    width: 80%;
+    width: 100%;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    border-bottom: 2px solid #009578;
-    overflow-y: auto;
+    border-bottom: 2px solid #e12929;
+    border-top: 2px solid #e12929;
+    overflow: auto;
     height: 220px;
     display: block;
-    margin: auto;
+    
 }
 
 .table-refresh__table thead tr {
     background-color: #e12929;
     color: white;
-    
+    font-family: 'FontBold';
 }
 
 .table-refresh__table thead tr,
 .table-refresh__table thead th {
+    position: -webkit-sticky;
     position: sticky;
-    top: 0px;
+    top: -2px;
+    border-top: 2px solid #e12929;
+    
 }
 
 .table-refresh__table th,
 .table-refresh__table td {
     text-align: center;
-    padding: 9px 18px;
+    padding: 2px 4px;
     font-weight: normal;
 }
 
-.table-refresh__table tbody tr:nth-of-type(even){
-    background-color: #eeeeee;
+.table-refresh__table tbody tr{
+    background-color: #f4ea9f;
 }
 
-.table-refresh__options{
-    display: flex;
-    align-items: center;
-    justify-items: flex-end;
-    padding: 10px 0;
+
+.table-refresh2{
+    max-width: 1000px;
+    min-width: 300px;
+    font-size: 20px;
+    font-family: 'FontSemi';
+    color: #4348C1;
+    height: 60vh;
+    display: block;
+    margin: auto;
+
+    position: relative;
 }
 
-.table-refresh__options > *:not(:last-child){
-    margin-right: 12px;
+.table-refresh__table2 th, .table-refresh__table2 td {
+    border: 1px solid #e12929;
+  }
+
+.table-refresh__table2{
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid #e12929;
+    overflow-y: auto;
+    display: block;
+    height: 400px;
+    margin: auto;
+    
 }
 
-.table-refresh__button{
-    background-color: #eeeeee;
-    color: #333333;
-    border: none;
-    outline: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-    border-radius: 50%;
-    cursor: pointer;
+.table-refresh__table2 thead tr {
+    background-color: #e12929;
+    color: white;
+    font-family: 'FontBold';
 }
 
-.table-refresh__button--refreshing{
-    animation: 0.5s rotate infinite linear;
+.table-refresh__table2 thead tr,
+.table-refresh__table2 thead th {
+    position: -webkit-sticky;
+    position: sticky;
+    top: -2px;
+    border-top: 2px solid #e12929;
 }
 
-@keyframes rotate {
-    to {
-        transform: rotate(1turn);
-    }
+th:first-child {
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    z-index: 2;
+    
 }
 
-.table-refresh__label{
-    font-size: 0.8em;
-    color: #999999;
+.table-refresh__table2 th,
+.table-refresh__table2 td {
+    text-align: center;
+    padding: 12px 24px;
+    font-weight: normal;
+    
 }
 
-/* html>body div.tableContainer table {
-    width: calc(100% - 16px);
-    overflow: visible;
+.table-refresh__table2 tbody tr{
+    background-color: #f4ea9f;
 }
 
-.html>body tbody.scrollContent {
-    width: calc(100% + 16px);
-} */
+
+
+
