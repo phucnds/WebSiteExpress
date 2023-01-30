@@ -1,197 +1,384 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1">
-        <link rel="stylesheet" href="./css/app.css"/>
-		<title>VIETTEL POST</title>
-	</head>
-	<body>
-		
-		<div class="background-image">
-			<div class="containerOP1 OP1">
-				<div class="logo-image ">
-					<img src="./img/LOGO_OP1.png" class="center topLogo">
-				</div>
-				<div class="div-blank"></div>
-				<div class="title-result">
-					<img src="./img/title_gift.png">
-				</div>
-				<div class="div-today"></div>
-				<div class="table-refresh" data-url="/data"></div>
-				<div class="btn-join2 ">
-					<a id="btn" href="#">
-						<img src="./img/BtnJoin_OP1.png" class="center botBtn">
-					</a>
-				</div>
-			</div>
 
-			
-			<div class="containerOP2 OP2">
-				<div class="btn-join"><a id="btn2" href="#"></a></div>
-				<div class="div-blank2"></div>
-				<div class="title-gift">
-					<img src="./img/title_gift.png">
-				</div>
-				<div class="div-today2"></div>
-				<div class="table-refresh2" data-url="/data"></div>
-			</div>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="./css/app.css" />
+	<title>VIETTEL POST</title>
+</head>
 
-			
-			
-		</div>
-		
+<body>
 
-        
-			
-		
-		<script src="./src/app.js"></script>
-	</body>
+	<h1 class="intro">Table with fluid height and width fixed header, footer and first column using position:sticky
+	</h1>
+	<p class="intro">This example uses position:sticky on the th elements in the thead, tfoot and left column to achieve
+		the fixed effect. Browsers that don't support position:sticky will just get a normal table so no harm done.
+		Resize browser smaller to see fixed first column.</p>
+	<div id="table-scroll" class="table-scroll">
+		<table id="main-table" class="main-table">
+			<thead>
+				<tr>
+					<th scope="col">Header 1</th>
+					<th scope="col">Header 2</th>
+					<th scope="col">Header 3 with longer content</th>
+					<th scope="col">Header 4 text</th>
+					<th scope="col">Header 5</th>
+					<th scope="col">Header 6</th>
+					<th scope="col">Header 7</th>
+					<th scope="col">Header 8</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>First top Column</th>
+					<td>Cell content<br>
+						test </td>
+					<td><a href="#">Cell content longer</a></td>
+					<td>Cell content with more content and more content Cell </td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+				</tr>
+				<tr>
+					<th>Left Column</th>
+					<td>Cell content</td>
+					<td>Cell content longer</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+				</tr>
+				<tr>
+					<th>Left Column</th>
+					<td>Cell content</td>
+					<td><a href="#">Cell content longer</a></td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+				</tr>
+				
+				<tr>
+					<th>Left Column</th>
+					<td>Cell content</td>
+					<td>Cell content longer</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+				</tr>
+
+				<tr>
+					<th>Left Column</th>
+					<td>Cell content</td>
+					<td>Cell content longer</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+				</tr>
+
+				<tr>
+					<th>Left Column</th>
+					<td>Cell content</td>
+					<td>Cell content longer</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+				</tr>
+
+				<tr>
+					<th>Left Column</th>
+					<td>Cell content</td>
+					<td>Cell content longer</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+				</tr>
+
+				<tr>
+					<th>Left Column</th>
+					<td>Cell content</td>
+					<td>Cell content longer</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+				</tr>
+
+				<tr>
+					<th>Left Column</th>
+					<td>Cell content</td>
+					<td>Cell content longer</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+				</tr>
+				<tr>
+					<th>Left Column</th>
+					<td>Cell content</td>
+					<td>Cell content longer</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+				</tr>
+				<tr>
+					<th>Left Column</th>
+					<td>Cell content</td>
+					<td>Cell content longer</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+				</tr>
+				<tr>
+					<th>Left Column</th>
+					<td>Cell content</td>
+					<td>Cell content longer</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+				</tr>
+				<tr>
+					<th>Left Column</th>
+					<td>Cell content</td>
+					<td>Cell content longer</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+				</tr>
+
+				<tr>
+					<th>Left Column</th>
+					<td>Cell content</td>
+					<td>Cell content longer</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+				</tr>
+
+				<tr>
+					<th>Left Column</th>
+					<td>Cell content</td>
+					<td>Cell content longer</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+				</tr>
+				
+				<tr>
+					<th>Left Column<br>
+						last</th>
+					<td>Cell content</td>
+					<td>Cell content longer</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+					<td>Cell content</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<th>Footer 1</th>
+					<td>Footer 2</td>
+					<td>Footer 3</td>
+					<td>Footer 4</td>
+					<td>Footer 5</td>
+					<td>Footer 6</td>
+					<td>Footer 7</td>
+					<td>Footer 8</td>
+				</tr>
+			</tfoot>
+		</table>
+	</div>
+	<p class="intro">Works in latest versions of modern browsers i.e. Edge, Chrome, Safari/ios and Firefox. Does not
+		work in IE11 or older browsers but no harm done.</p>
+	<p class="intro">All of the other fixed table headers and footers that I've seen are either fixed width or fixed
+		height or need a continuous update with JS and are very janky. This one is very smooth. You would of course need
+		to linearise the data for smaller screens/mobile but that is a question for another day :). See <a
+			href="http://www.pmob.co.uk/temp2/table-fixed-head-foot4.html" target="_blank">this example</a> for a demo
+		of how to linearise for mobile.</p>
+
+	<p class="intro"><strong> See <a href="https://codepen.io/paulobrien/pen/LjRNXa" target="_blank">JS
+				Version</a></strong></p>
+
+
+
+
+
+
+
+	<script src="./src/app.js"></script>
+</body>
 
 
 
 <style>
-*{
-	margin: 0;
-	padding: 0;
-}
+	* {
+		margin: 0;
+		padding: 0;
+	}
 
-.btn-join{
-	display: block;
-	width: 100%;
-	height: 50vh;
-	text-align: center;
-}
+	.btn-join {
+		display: block;
+		width: 100%;
+		height: 50vh;
+		text-align: center;
+	}
 
-.btn-join a{
-	width: 70%;
-	height: 100%;
-	cursor: pointer;
-	padding:1em;
-    text-align: center;
-    display:inline-block;
-    text-decoration: none !important;
-    margin-top: 80px;
-}
+	.btn-join a {
+		width: 70%;
+		height: 100%;
+		cursor: pointer;
+		padding: 1em;
+		text-align: center;
+		display: inline-block;
+		text-decoration: none !important;
+		margin-top: 80px;
+	}
 
-.center {
- 	display: block;
-	margin: auto;
-}
+	.center {
+		display: block;
+		margin: auto;
+	}
 
-.btn-join2{
-	margin-top: 24px;
-}
+	.btn-join2 {
+		margin-top: 24px;
+	}
 
-.topLogo{
-	padding-top: 20px;
-}
+	.topLogo {
+		padding-top: 20px;
+	}
 
-.botBtn{
-	padding-bottom: 20px;
-}
+	.botBtn {
+		padding-bottom: 20px;
+	}
 
-.containerOP1{
-	width: 100%;
-	height: 100%;
-}
+	.containerOP1 {
+		width: 100%;
+		height: 100%;
+	}
 
-.div-blank{
-	height: 36vh;
-	
-}
+	.div-blank {
+		height: 36vh;
 
-.div-blank2{
-	height: 10vh;
-}
+	}
 
-.title-result img{
-	width: 40%;
-	display: block;
-	margin: auto;
-}
+	.div-blank2 {
+		height: 10vh;
+	}
 
-.title-gift img{
-	height: 90px;
-	display: block;
-	margin: auto;
-}
+	.title-result img {
+		width: 40%;
+		display: block;
+		margin: auto;
+	}
 
-.div-today{
-	background-image: url('./img/BG_date.png');
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	height: 30px;
-	margin-bottom: 16px;
-}
+	.title-gift img {
+		height: 90px;
+		display: block;
+		margin: auto;
+	}
 
-.div-today p{
-	text-align: center;
-	color: white;
-	padding-top: 6px;
-	font-family: 'PF BeauSans Pro',Sans-serif;
-	font-size: 14px;
-}
-
-.div-today2{
-	background-image: url('./img/BG_date.png');
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	height: 30px;
-	margin-bottom: 16px;
-}
-
-.div-today2 p{
-	text-align: center;
-	color: white;
-	padding-top: 6px;
-	font-family: 'PF BeauSans Pro',Sans-serif;
-	font-size: 14px;
-}
-
-@media screen and (max-width:500px) {
-	.background-image{
-		background-image: url('./img/BG_OP1.png');
-		background-size: cover;
+	.div-today {
+		background-image: url('./img/BG_date.png');
+		background-size: contain;
 		background-repeat: no-repeat;
 		background-position: center;
-		height: 120vh;
-		
+		height: 30px;
+		margin-bottom: 16px;
 	}
 
-	.OP2{
-		display: none;
+	.div-today p {
+		text-align: center;
+		color: white;
+		padding-top: 6px;
+		font-family: 'PF BeauSans Pro', Sans-serif;
+		font-size: 14px;
 	}
 
-	.OP1{
-		display: block;
-	}
-}
-
-
-
-@media screen and (min-width:501px) {
-	.background-image{
-		background-image: url('./img/BG_OP2.png');
-		background-size: cover;
+	.div-today2 {
+		background-image: url('./img/BG_date.png');
+		background-size: contain;
 		background-repeat: no-repeat;
 		background-position: center;
-		height: 140vh;
-		
+		height: 30px;
+		margin-bottom: 16px;
 	}
 
-	.OP2{
-		display: block;
+	.div-today2 p {
+		text-align: center;
+		color: white;
+		padding-top: 6px;
+		font-family: 'PF BeauSans Pro', Sans-serif;
+		font-size: 14px;
 	}
 
-	.OP1{
-		display: none;
+	@media screen and (max-width:500px) {
+		.background-image {
+			background-image: url('./img/BG_OP1.png');
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			height: 120vh;
+
+		}
+
+		.OP2 {
+			display: none;
+		}
+
+		.OP1 {
+			display: block;
+		}
 	}
-}
-	
-</style>	
+
+
+
+	@media screen and (min-width:501px) {
+		.background-image {
+			background-image: url('./img/BG_OP2.png');
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			height: 140vh;
+
+		}
+
+		.OP2 {
+			display: block;
+		}
+
+		.OP1 {
+			display: none;
+		}
+	}
+</style>
 
 
 </html>
