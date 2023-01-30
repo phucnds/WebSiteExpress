@@ -109,13 +109,6 @@
     border-top: 2px solid #e12929;
 }
 
-th:first-child {
-    position: -webkit-sticky;
-    position: sticky;
-    left: 0;
-    z-index: 2;
-    
-}
 
 .table-refresh__table2 th,
 .table-refresh__table2 td {
@@ -146,10 +139,10 @@ html {
   }
   .table-scroll {
     position: relative;
-    width:100%;
+    width:80%;
     z-index: 1;
     margin: auto;
-    overflow: auto;
+    overflow-y: auto;
     height: 350px;
   }
   .table-scroll table {
@@ -193,8 +186,8 @@ html {
   } /* testing links*/
   
   th:first-child {
-    position: -webkit-sticky;
-    position: sticky;
+    /* position: -webkit-sticky;
+    position: sticky; */
     left: 0;
     z-index: 2;
     background: darkslategray;
